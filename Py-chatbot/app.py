@@ -92,4 +92,4 @@ def get_questions():
     return jsonify(questions=list(questions.values()))
 
 if __name__ == '__main__':
-    app.run(ports=5000)
+    app.run(port=5000)
