@@ -91,5 +91,8 @@ def get_questions():
     # Return all questions as a JSON list
     return jsonify(questions=list(questions.values()))
 
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
+#if __name__ == '__main__':
+   # app.run(debug=True)
