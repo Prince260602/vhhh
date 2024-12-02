@@ -17,7 +17,7 @@ const Chatbot = () => {
 
   // Fetch questions and answers from the API when the component loads
   useEffect(() => {
-    axios.get('http://127.0.0.1:5000/questions')
+    axios.get('https://vhhh.onrender.com/questions')
       .then(response => {
         setQuestions(response.data.questions);
         setAnswers(response.data.answers);
